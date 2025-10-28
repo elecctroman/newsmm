@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lisansonay Storefront</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="lk-header">
+    <div class="container lk-header__top">
+      <a href="#" class="lk-logo" aria-label="Lisansonay ana sayfa">
+        <div class="img ph" role="img" aria-label="Logo placeholder"></div>
+      </a>
+      <form class="lk-search" action="#" role="search">
+        <label for="lk-search-input" class="sr-only">Ürün ara</label>
+        <input id="lk-search-input" type="search" placeholder="Ürün, kategori veya marka ara" aria-label="Ürün ara">
+        <button type="submit" aria-label="Ara">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 10-.71.71l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0a4.5 4.5 0 110-9 4.5 4.5 0 010 9z"/></svg>
+        </button>
+      </form>
+      <nav class="lk-header__actions" aria-label="Kısa menü">
+        <a href="#" class="lk-link">Giriş</a>
+        <a href="#" class="lk-link">Kayıt</a>
+        <button type="button" class="lk-icon-btn" aria-label="Favoriler">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3 9.24 3 10.91 3.81 12 5a6.003 6.003 0 014.5-2C19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </button>
+        <button type="button" class="lk-icon-btn lk-icon-btn--cart" aria-label="Sepet">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4H5L4 6v2h2l3.6 7.59L8.24 18a2 2 0 102.52 2.72 2 2 0 103.74-.72h4.5v-2H13l.1-.2L16 9H6.42l-.7-1.4L5.16 5H7V4z"/></svg>
+          <span class="lk-cart-badge" aria-hidden="true">2</span>
+        </button>
+      </nav>
+    </div>
+    <nav class="lk-catbar" aria-label="Sekmeler">
+      <div class="container">
+        <ul>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="lk-hero container" aria-labelledby="lk-hero-title">
+      <h1 id="lk-hero-title" class="sr-only">Öne çıkan kampanyalar</h1>
+      <div class="lk-hero-grid">
+        <div class="lk-hero-left lk-carousel" id="lk-carousel" role="region" aria-roledescription="carousel" aria-label="Highlights">
+          <button class="lk-carousel__nav prev" type="button" aria-label="Previous">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg>
+          </button>
+          <div class="lk-carousel__track" aria-live="polite">
+            <a class="lk-carousel__slide" href="#" id="lk-slide-0" role="group" aria-roledescription="slide" aria-label="1 / 3">
+              <div class="img ph" role="img" aria-label="Windows kampanya görseli"></div>
+              <div class="lk-carousel__copy">
+                <p>Genuine Windows Keys</p>
+                <span>En güvenilir lisanslar tek tıkla</span>
+              </div>
+            </a>
+            <a class="lk-carousel__slide" href="#" id="lk-slide-1" role="group" aria-roledescription="slide" aria-label="2 / 3">
+              <div class="img ph" role="img" aria-label="Office kampanya görseli"></div>
+              <div class="lk-carousel__copy">
+                <p>Office Paketlerinde %40</p>
+                <span>Profesyoneller için esnek abonelikler</span>
+              </div>
+            </a>
+            <a class="lk-carousel__slide" href="#" id="lk-slide-2" role="group" aria-roledescription="slide" aria-label="3 / 3">
+              <div class="img ph" role="img" aria-label="VPN kampanya görseli"></div>
+              <div class="lk-carousel__copy">
+                <p>VPN Lisanslarında Güven</p>
+                <span>Her yerden erişim sağlayın</span>
+              </div>
+            </a>
+          </div>
+          <button class="lk-carousel__nav next" type="button" aria-label="Next">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 7.41L13.17 12 8.59 16.59 10 18l6-6-6-6z"/></svg>
+          </button>
+          <div class="lk-carousel__dots" role="tablist"></div>
+        </div>
+        <aside class="lk-hero-right lk-promo">
+          <a href="#" class="lk-promo__card" aria-label="Premium kampanya">
+            <div class="img ph" role="img" aria-label="Promosyon görseli"></div>
+            <div class="lk-promo__copy">
+              <p>Premium SEO Araçları</p>
+              <span>En popüler üyelikler tek yerde</span>
+            </div>
+          </a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="lk-section container lk-best" aria-labelledby="lk-best-title">
+      <div class="lk-section__head">
+        <h2 id="lk-best-title">Best Selling Licenses</h2>
+      </div>
+      <div class="lk-grid lk-grid-products">
+        <article class="lk-card">
+          <span class="lk-badge">HOT</span>
+          <div class="img ph" role="img" aria-label="Semrush görseli"></div>
+          <h3 class="lk-card__title">Semrush Guru – 14 Days Access</h3>
+          <p class="lk-card__meta">SEO Tool</p>
+          <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+          <div class="lk-card__price">
+            <span class="current">₺125,00</span>
+            <span class="old">₺199,00</span>
+          </div>
+          <button class="lk-btn lk-btn--primary" type="button" data-product-id="1">Add To Cart</button>
+        </article>
+        <article class="lk-card">
+          <div class="img ph" role="img" aria-label="Office görseli"></div>
+          <h3 class="lk-card__title">Microsoft Office 365 Pro Plus</h3>
+          <p class="lk-card__meta">Office Suite</p>
+          <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+          <div class="lk-card__price">
+            <span class="current">₺299,00</span>
+          </div>
+          <button class="lk-btn lk-btn--primary" type="button" data-product-id="2">Add To Cart</button>
+        </article>
+        <article class="lk-card">
+          <span class="lk-badge">-30%</span>
+          <div class="img ph" role="img" aria-label="Windows görseli"></div>
+          <h3 class="lk-card__title">Windows 11 Pro Retail Key</h3>
+          <p class="lk-card__meta">Operating System</p>
+          <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+          <div class="lk-card__price">
+            <span class="current">₺179,00</span>
+            <span class="old">₺249,00</span>
+          </div>
+          <button class="lk-btn lk-btn--primary" type="button" data-product-id="3">Add To Cart</button>
+        </article>
+        <article class="lk-card">
+          <div class="img ph" role="img" aria-label="VPN görseli"></div>
+          <h3 class="lk-card__title">NordVPN 12 Months Premium</h3>
+          <p class="lk-card__meta">VPN Service</p>
+          <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+          <div class="lk-card__price">
+            <span class="current">₺220,00</span>
+          </div>
+          <button class="lk-btn lk-btn--primary" type="button" data-product-id="4">Add To Cart</button>
+        </article>
+        <article class="lk-card">
+          <div class="img ph" role="img" aria-label="Canva görseli"></div>
+          <h3 class="lk-card__title">Canva Pro Designer Toolkit</h3>
+          <p class="lk-card__meta">Design Suite</p>
+          <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+          <div class="lk-card__price">
+            <span class="current">₺199,00</span>
+          </div>
+          <button class="lk-btn lk-btn--primary" type="button" data-product-id="5">Add To Cart</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="lk-section container lk-row">
+      <aside class="lk-row-left">
+        <h3>Genuine Windows Licenses</h3>
+        <p>Orijinal Windows 10 ve 11 anahtarları anında teslim.</p>
+        <div class="img ph" role="img" aria-label="Windows lisans görseli"></div>
+        <a class="lk-btn lk-btn--primary" href="#">BUY NOW</a>
+      </aside>
+      <div class="lk-row-right">
+        <div class="lk-row-head">
+          <h2>Windows Licenses</h2>
+          <a class="lk-listall" href="#">List All
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 7.41L13.17 12 8.59 16.59 10 18l6-6-6-6z"/></svg>
+          </a>
+        </div>
+        <div class="lk-grid lk-grid-products">
+          <article class="lk-card">
+            <span class="lk-badge">HOT</span>
+            <div class="img ph" role="img" aria-label="Windows 10 görseli"></div>
+            <h3 class="lk-card__title">Windows 10 Pro Retail Key</h3>
+            <p class="lk-card__meta">Operating System</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺149,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="6">Add To Cart</button>
+          </article>
+          <article class="lk-card">
+            <div class="img ph" role="img" aria-label="Windows 11 görseli"></div>
+            <h3 class="lk-card__title">Windows 11 Home Retail Key</h3>
+            <p class="lk-card__meta">Operating System</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺139,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="7">Add To Cart</button>
+          </article>
+          <article class="lk-card">
+            <div class="img ph" role="img" aria-label="Windows Enterprise görseli"></div>
+            <h3 class="lk-card__title">Windows Enterprise E3</h3>
+            <p class="lk-card__meta">Business License</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺299,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="8">Add To Cart</button>
+          </article>
+          <article class="lk-card">
+            <div class="img ph" role="img" aria-label="Windows upgrade görseli"></div>
+            <h3 class="lk-card__title">Home to Pro Upgrade</h3>
+            <p class="lk-card__meta">Upgrade</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺99,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="9">Add To Cart</button>
+          </article>
+          <article class="lk-card">
+            <div class="img ph" role="img" aria-label="Visio görseli"></div>
+            <h3 class="lk-card__title">Microsoft Visio Professional</h3>
+            <p class="lk-card__meta">Productivity</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺189,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="10">Add To Cart</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="lk-section container lk-row">
+      <aside class="lk-row-left">
+        <h3>Microsoft Office Licenses</h3>
+        <p>İşletmeniz için en popüler Office paketlerini keşfedin.</p>
+        <div class="img ph" role="img" aria-label="Office lisans görseli"></div>
+        <a class="lk-btn lk-btn--primary" href="#">BUY NOW</a>
+      </aside>
+      <div class="lk-row-right">
+        <div class="lk-row-head">
+          <h2>Office Licenses</h2>
+          <a class="lk-listall" href="#">List All
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 7.41L13.17 12 8.59 16.59 10 18l6-6-6-6z"/></svg>
+          </a>
+        </div>
+        <div class="lk-grid lk-grid-products">
+          <article class="lk-card">
+            <div class="img ph" role="img" aria-label="Office 2019 görseli"></div>
+            <h3 class="lk-card__title">Office 2019 Professional Plus</h3>
+            <p class="lk-card__meta">Office Suite</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺249,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="11">Add To Cart</button>
+          </article>
+          <article class="lk-card">
+            <div class="img ph" role="img" aria-label="Office 365 görseli"></div>
+            <h3 class="lk-card__title">Office 365 E3 Business</h3>
+            <p class="lk-card__meta">Office Suite</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺320,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="12">Add To Cart</button>
+          </article>
+          <article class="lk-card">
+            <span class="lk-badge">NEW</span>
+            <div class="img ph" role="img" aria-label="Project görseli"></div>
+            <h3 class="lk-card__title">Microsoft Project Professional</h3>
+            <p class="lk-card__meta">Project Management</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺289,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="13">Add To Cart</button>
+          </article>
+          <article class="lk-card">
+            <div class="img ph" role="img" aria-label="Exchange görseli"></div>
+            <h3 class="lk-card__title">Exchange Online Plan 1</h3>
+            <p class="lk-card__meta">Business Mail</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺89,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="14">Add To Cart</button>
+          </article>
+          <article class="lk-card">
+            <div class="img ph" role="img" aria-label="SharePoint görseli"></div>
+            <h3 class="lk-card__title">SharePoint Online Plan</h3>
+            <p class="lk-card__meta">Collaboration</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺109,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="15">Add To Cart</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="lk-section container lk-row">
+      <aside class="lk-row-left">
+        <h3>SEO Tools</h3>
+        <p>Analiz ve raporlama için en güçlü araçlar.</p>
+        <div class="img ph" role="img" aria-label="SEO araç görseli"></div>
+        <a class="lk-btn lk-btn--primary" href="#">BUY NOW</a>
+      </aside>
+      <div class="lk-row-right">
+        <div class="lk-row-head">
+          <h2>SEO Tools</h2>
+          <a class="lk-listall" href="#">List All
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 7.41L13.17 12 8.59 16.59 10 18l6-6-6-6z"/></svg>
+          </a>
+        </div>
+        <div class="lk-grid lk-grid-products">
+          <article class="lk-card">
+            <span class="lk-badge">HOT</span>
+            <div class="img ph" role="img" aria-label="Ahrefs görseli"></div>
+            <h3 class="lk-card__title">Ahrefs Advanced 30 Days</h3>
+            <p class="lk-card__meta">SEO Tool</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺350,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="16">Add To Cart</button>
+          </article>
+          <article class="lk-card">
+            <div class="img ph" role="img" aria-label="Moz görseli"></div>
+            <h3 class="lk-card__title">Moz Pro Campaign Access</h3>
+            <p class="lk-card__meta">SEO Tool</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺210,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="17">Add To Cart</button>
+          </article>
+          <article class="lk-card">
+            <div class="img ph" role="img" aria-label="Screaming Frog görseli"></div>
+            <h3 class="lk-card__title">Screaming Frog License</h3>
+            <p class="lk-card__meta">Crawler</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺180,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="18">Add To Cart</button>
+          </article>
+          <article class="lk-card">
+            <div class="img ph" role="img" aria-label="Keyword tool görseli"></div>
+            <h3 class="lk-card__title">Keyword Research Suite</h3>
+            <p class="lk-card__meta">Analytics</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺160,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="19">Add To Cart</button>
+          </article>
+          <article class="lk-card">
+            <div class="img ph" role="img" aria-label="Backlink görseli"></div>
+            <h3 class="lk-card__title">Backlink Monitor Pro</h3>
+            <p class="lk-card__meta">SEO Tool</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺140,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="20">Add To Cart</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="lk-section container lk-row">
+      <aside class="lk-row-left">
+        <h3>VPN Licenses</h3>
+        <p>Çevrimiçi gizlilik için global VPN seçenekleri.</p>
+        <div class="img ph" role="img" aria-label="VPN lisans görseli"></div>
+        <a class="lk-btn lk-btn--primary" href="#">BUY NOW</a>
+      </aside>
+      <div class="lk-row-right">
+        <div class="lk-row-head">
+          <h2>VPN Licenses</h2>
+          <a class="lk-listall" href="#">List All
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 7.41L13.17 12 8.59 16.59 10 18l6-6-6-6z"/></svg>
+          </a>
+        </div>
+        <div class="lk-grid lk-grid-products">
+          <article class="lk-card">
+            <span class="lk-badge">HOT</span>
+            <div class="img ph" role="img" aria-label="NordVPN görseli"></div>
+            <h3 class="lk-card__title">NordVPN Premium 12 Ay</h3>
+            <p class="lk-card__meta">VPN Service</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺220,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="21">Add To Cart</button>
+          </article>
+          <article class="lk-card">
+            <div class="img ph" role="img" aria-label="Surfshark görseli"></div>
+            <h3 class="lk-card__title">Surfshark 24 Ay Kampanya</h3>
+            <p class="lk-card__meta">VPN Service</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺260,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="22">Add To Cart</button>
+          </article>
+          <article class="lk-card">
+            <div class="img ph" role="img" aria-label="ExpressVPN görseli"></div>
+            <h3 class="lk-card__title">ExpressVPN 6 Ay Premium</h3>
+            <p class="lk-card__meta">VPN Service</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺240,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="23">Add To Cart</button>
+          </article>
+          <article class="lk-card">
+            <div class="img ph" role="img" aria-label="CyberGhost görseli"></div>
+            <h3 class="lk-card__title">CyberGhost 18 Ay Plan</h3>
+            <p class="lk-card__meta">VPN Service</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺210,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="24">Add To Cart</button>
+          </article>
+          <article class="lk-card">
+            <div class="img ph" role="img" aria-label="AtlasVPN görseli"></div>
+            <h3 class="lk-card__title">AtlasVPN Premium 1 Yıl</h3>
+            <p class="lk-card__meta">VPN Service</p>
+            <p class="lk-card__status is-in-stock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.41z"/></svg>Stokta</p>
+            <div class="lk-card__price">
+              <span class="current">₺180,00</span>
+            </div>
+            <button class="lk-btn lk-btn--primary" type="button" data-product-id="25">Add To Cart</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="lk-section container lk-about" aria-labelledby="lk-about-title">
+      <div class="lk-about__content">
+        <h2 id="lk-about-title">Why Lisansonay?</h2>
+        <p>Lisansonay, global yazılım ve abonelik çözümlerini güvenilir kaynaklardan sağlayarak işletmelerin ve bireysel kullanıcıların verimli çalışmasını destekler. Tüm lisanslarımız anında teslim edilir ve kapsamlı destek hizmetlerimizle sorularınızı hızla yanıtlarız.</p>
+        <p>Satın alma deneyiminizi kolaylaştırmak için güvenli ödeme altyapısı, hızlı teslimat ve uzman müşteri temsilcileriyle yanınızdayız. Lisans yönetimi ve kampanyalarla ilgili tüm detayları tek merkezden takip edin.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="lk-footer">
+    <div class="container lk-footer__inner">
+      <div class="lk-footer__brand">
+        <div class="img ph" role="img" aria-label="Footer logo"></div>
+        <div class="lk-footer__social" aria-label="Sosyal medya">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm12 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h12zm-6 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm6.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 3H4a1 1 0 00-1 1v16a1 1 0 001 1h8.6v-6.97H10V11h2.6V8.93c0-2.58 1.57-3.99 3.87-3.99 1.1 0 2.26.2 2.26.2v2.48h-1.27c-1.25 0-1.64.78-1.64 1.58V11H19l-.42 3.03h-2.36V21H20a1 1 0 001-1V4a1 1 0 00-1-1z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h3l4.47 6.62L16.5 4H20l-6.9 9.59L20 20h-3l-4.73-6.99L7.5 20H4l7.1-9.84L4 4z"/></svg></a>
+        </div>
+      </div>
+      <div class="lk-footer__links">
+        <h4>Menü</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="lk-footer__contact">
+        <h4>İletişim</h4>
+        <p>support@lisansonay.com</p>
+        <p>+90 533 000 00 00</p>
+        <div class="lk-footer__payments">
+          <div class="img ph" role="img" aria-label="Visa"></div>
+          <div class="img ph" role="img" aria-label="Mastercard"></div>
+          <div class="img ph" role="img" aria-label="PayPal"></div>
+        </div>
+      </div>
+    </div>
+    <div class="lk-footer__bottom">
+      <div class="container">
+        <p>© 2025 Lisansonay. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
